@@ -1,26 +1,21 @@
 import React from 'react';
-import { DatePicker, Card  } from 'antd';
 import './App.scss';
-
+import Admin from './pages/Admin';
+import SignIn from './pages/Admin/SignIn';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
 
 function App() {
-
-  const test = (date, dateString) =>{
-    console.log(date, dateString)
-  }
   return (
-    <div className="app">
-        <h1>Web personal cliente - <span>Cristian</span></h1>
-        <h2>Proyecto</h2>
-        <DatePicker onChange={test}/>
-
-        <Card title="Default size card" extra={<a href="#">More</a>} style={{ width: 300 }}>
-          <p>Card content</p>
-          <p>Card content</p>
-          <p>Card content</p>
-        </Card>
+    <div>
+        <h1>Estamos en App</h1>
+        <Home/>
+        <Contact/>
+        <Admin/>
+        <SignIn/>
     </div>
   );
 }
+
 
 export default App;
